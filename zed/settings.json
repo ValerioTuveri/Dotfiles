@@ -1,0 +1,69 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "git_panel": {
+    "dock": "right"
+  },
+  "disable_ai": false,
+  "tab_size": 2,
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "coloring": "indent_aware",
+    "active_line_width": 2,
+    "line_width": 1,
+  },
+  "colorize_brackets": true,
+  "agent": {
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "cursor_shape": "bar",
+  "ui_font_family": "Hack Nerd Font",
+  "format_on_save": "on",
+  "ensure_final_newline_on_save": true,
+  "project_panel": {
+    "dock": "right",
+    "bold_folder_labels": true,
+  },
+  "buffer_font_family": "Hack Nerd Font Mono",
+  "terminal": {
+    "font_family": "Hack Nerd Font Mono",
+  },
+  "agent_servers": {
+    "gemini": {
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry",
+    },
+  },
+  "icon_theme": "Material Icon Theme",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Frappé",
+  },
+  "file_types": {
+    "Helm": [
+      "**/templates/**/*.tpl",
+      "**/templates/**/*.yaml",
+      "**/templates/**/*.yml",
+      "**/helmfile.d/**/*.yaml",
+      "**/helmfile.d/**/*.yml",
+      "**/values*.yaml",
+    ],
+  },
+}
