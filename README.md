@@ -1,8 +1,8 @@
 # Dotfiles
 
-Backup delle configurazioni correnti importate da Windows.
+Personal Windows development environment configuration files.
 
-## Importati
+## Included
 
 - `powershell7/Microsoft.PowerShell_profile.ps1`
 - `powershell7/powershell.config.json`
