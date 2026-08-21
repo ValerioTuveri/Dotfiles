@@ -131,6 +131,12 @@ workspaces:
   - name: "9"
 
 window_rules:
+  # Gestisci solo Chrome, Windows Terminal e Zed.
+  # Tutti gli altri processi restano finestre normali di Windows.
+  - commands: [ "ignore" ]
+    match:
+      - window_process: { not_regex: "^(chrome|WindowsTerminal|Zed)$" }
+
   - commands: [ "ignore" ]
     match:
       # Ignores any Zebar windows.
@@ -210,7 +216,7 @@ keybindings:
   # Disables window management and all other keybindings until alt+shift+p
   # is pressed again.
   - commands: [ "wm-toggle-pause" ]
-    bindings: [ "alt+shift+p" ]
+    bindings: [ "alt+shift+p", "alt+ctrl+p" ]
 
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
