@@ -11,14 +11,14 @@
     ],
     "profiles": {
         "defaults": {
-            "colorScheme": "Catppuccin Frappe"
+            "colorScheme": "Catppuccin Mocha"
         },
         "list": [
             {
                 "backgroundImage": "desktopWallpaper",
                 "backgroundImageOpacity": 0.15,
                 "backgroundImageStretchMode": "fill",
-                "colorScheme": "Catppuccin Frappe",
+                "colorScheme": "Catppuccin Mocha",
                 "font": {
                     "face": "Hack Nerd Font",
                     "size": 10
@@ -31,7 +31,7 @@
                 "useAcrylic": true
             },
             {
-                "colorScheme": "Catppuccin Frappe",
+                "colorScheme": "Catppuccin Mocha",
                 "font": {
                     "face": "Hack Nerd Font",
                     "size": 10
@@ -262,9 +262,32 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#A2734C"
+        },
+        {
+            "background": "#1E1E2E",
+            "black": "#45475A",
+            "blue": "#89B4FA",
+            "brightBlack": "#585B70",
+            "brightBlue": "#89B4FA",
+            "brightCyan": "#94E2D5",
+            "brightGreen": "#A6E3A1",
+            "brightPurple": "#F5C2E7",
+            "brightRed": "#F38BA8",
+            "brightWhite": "#A6ADC8",
+            "brightYellow": "#F9E2AF",
+            "cursorColor": "#F5E0DC",
+            "cyan": "#94E2D5",
+            "foreground": "#CDD6F4",
+            "green": "#A6E3A1",
+            "name": "Catppuccin Mocha",
+            "purple": "#F5C2E7",
+            "red": "#F38BA8",
+            "selectionBackground": "#585B70",
+            "white": "#BAC2DE",
+            "yellow": "#F9E2AF"
         }
     ],
-    "theme": "Catppuccin Frappe",
+    "theme": "Catppuccin Mocha",
     "themes": [
         {
             "name": "Catppuccin Frappe",
@@ -284,6 +307,21 @@
                 "frame": null,
                 "unfocusedFrame": null,
                 "useMica": false
+            }
+        },
+        {
+            "name": "Catppuccin Mocha",
+            "tab": {
+                "background": "#1E1E2EFF",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": {
+                "background": "#181825FF",
+                "unfocusedBackground": "#11111BFF"
+            },
+            "window": {
+                "applicationTheme": "dark"
             }
         }
     ]
