@@ -222,11 +222,6 @@ keybindings:
   - commands: [ "wm-toggle-pause" ]
     bindings: [ "alt+shift+p", "alt+ctrl+p" ]
 
-  # Change tiling direction. This determines where new tiling windows will
-  # be inserted.
-  - commands: [ "toggle-tiling-direction" ]
-    bindings: [ "alt+d" ]
-
   # Change focus from tiling windows -> floating -> fullscreen.
   # - commands: [ "wm-cycle-focus" ]
   #   bindings: [ "alt+space" ]
@@ -268,12 +263,6 @@ keybindings:
   # Terminal and Git Bash respectively.
   - commands: [ "shell-exec wt" ]
     bindings: [ "alt+v" ]
-
-  # Focus the next/previous active workspace defined in `workspaces` config.
-  - commands: [ "focus --next-active-workspace" ]
-    bindings: [ "alt+s" ]
-  - commands: [ "focus --prev-active-workspace" ]
-    bindings: [ "alt+a" ]
 
   # Focus the workspace that last had focus.
   #- commands: ['focus --recent-workspace']

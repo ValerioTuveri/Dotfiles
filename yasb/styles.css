@@ -149,6 +149,8 @@
     font-weight: 400;
     color: var(--yasb-icon-fg);
     font-family: var(--icons-font);
+    min-width: 18px;
+    qproperty-alignment: 'AlignCenter';
 }
 .widget .label {
     color: var(--yasb-fg);
@@ -1260,5 +1262,62 @@
 }
 /* Wallpapers widget */
 .wallpapers-widget:hover {
+    background-color: var(--yasb-white-alpha-20);
+}
+/* Window switcher */
+.window-switcher-widget:hover {
+    background-color: var(--yasb-white-alpha-20);
+}
+.window-switcher-widget .icon {
+    padding-right: 2px;
+}
+.window-switcher-popup {
+    background-color: var(--yasb-dialog-bg);
+    border: 1px solid var(--yasb-tooltip-border);
+    border-radius: 14px;
+    padding: 8px;
+}
+.window-switcher-popup .item {
+    background-color: var(--yasb-white-alpha-05);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 4px;
+}
+.window-switcher-popup .item:hover {
+    background-color: var(--yasb-white-alpha-10);
+    border-color: var(--yasb-white-alpha-15);
+}
+.window-switcher-popup .item.active {
+    background-color: var(--yasb-accent);
+    border-color: var(--yasb-accent-hover);
+}
+.window-switcher-popup .title {
+    color: var(--yasb-fg);
+    background-color: var(--yasb-white-alpha-06);
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 4px;
+    font-weight: 600;
+}
+/* WiFi widget */
+.wifi-widget .icon {
+    font-family: "JetBrainsMono NFP";
+}
+.wifi-widget .ethernet-icon {
+    font-family: "JetBrainsMono NFP";
+}
+/* Microphone widget */
+.microphone-widget .icon {
+    font-family: "JetBrainsMono NFP";
+}
+.microphone-widget .label.muted,
+.microphone-widget .label.no-device,
+.microphone-widget .icon.muted,
+.microphone-widget .icon.no-device {
+    color: #f38ba8;
+    font-weight: 700;
+}
+.microphone-widget:hover {
     background-color: var(--yasb-white-alpha-20);
 }

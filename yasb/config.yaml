@@ -44,9 +44,11 @@ bars:
       right:
       - audio_visualizer
       - systray
+      - wifi
+      - microphone
       - open_meteo
       - wallpapers
-      - github
+      - window_switcher
       - notifications
       - volume
       - clock
@@ -331,6 +333,29 @@ widgets:
         direction: down
         offset_top: 6
         offset_left: 0
+  microphone:
+    type: "yasb.microphone.MicrophoneWidget"
+    options:
+      label: "<span>{icon}</span>"
+      label_alt: "<span>{icon}</span>"
+      tooltip: true
+      icons:
+        normal: "\U000f036c"
+        muted: "\U000f036d"
+      callbacks:
+        on_left: toggle_mic_menu
+        on_middle: toggle_label
+        on_right: toggle_mute
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "<span>{wifi_icon}</span>"
+      label_alt: "<span>{wifi_icon}</span> {wifi_name}"
+      ethernet_label: "<span class=\"ethernet-icon\">{wifi_icon}</span>"
+      ethernet_label_alt: "<span class=\"ethernet-icon\">{wifi_icon}</span>"
+      ethernet_icon: "\uf108"
+      callbacks:
+        on_left: toggle_label
   open_meteo:
     type: yasb.open_meteo.OpenMeteoWidget
     options:
@@ -371,36 +396,13 @@ widgets:
           rain_effect_intensity: 1.0
           snow_effect_intensity: 1.0
           scale_with_chance: true
-  github:
-    type: yasb.github.GithubWidget
+  window_switcher:
+    type: "yasb.window_switcher.WindowSwitcherWidget"
     options:
-      label: "<span>\ueb00</span>"
-      label_alt: Notifications {data}
-      max_notification: 30
-      notification_dot:
-        enabled: true
-        corner: top_right
-        color: '#ef4747'
-        margin:
-        - 0
-        - 5
-      only_unread: false
-      show_comment_count: true
-      max_field_size: 54
-      update_interval: 600
-      icons:
-        comment: "\uE90A"
-      menu:
-        blur: true
-        round_corners: true
-        round_corners_type: normal
-        border_color: System
-        alignment: left
-        direction: down
-        show_categories: true
-        categories_order:
-        - Issue
-        - PullRequest
-        - CheckSuite
-        - Release
-        - Discussion
+      label: "<span>\uf2d2</span>"
+      callbacks:
+        on_left: toggle_window_switcher
+      keybindings:
+        - keys: "alt+q"
+          action: toggle_window_switcher
+          screen: active
