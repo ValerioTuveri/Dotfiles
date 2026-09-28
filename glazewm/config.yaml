@@ -92,7 +92,7 @@ window_effects:
       enabled: true
       style: "rounded"
     transparency:
-      enabled: true
+      enabled: false
       opacity: "88%"
 
 window_behavior:
@@ -131,6 +131,11 @@ workspaces:
   - name: "9"
 
 window_rules:
+  # Leave only Chrome, Windows Terminal, and Zed managed by GlazeWM.
+  - commands: [ "ignore" ]
+    match:
+      - window_process: { not_regex: "(?i)^(chrome(\\.exe)?|windowsterminal(\\.exe)?|zed(\\.exe)?)$" }
+
   - commands: [ "ignore" ]
     match:
       # Ignores any Zebar windows.

@@ -54,7 +54,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Catppuccin Mocha",
+    "dark": "Catppuccin Macchiato",
   },
   "file_types": {
     "Helm": [
